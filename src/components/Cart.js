@@ -19,6 +19,12 @@ const Cart = () => {
             <div className='box-details'>
               <h2>T-SHIRT {product.text}</h2>
               <p>$ {product.price}</p>
+
+              <div className='amount'>
+                <button> - </button>
+                <span>{product.count}</span>
+                <button> + </button>
+              </div>
             </div>
           </div>
         );

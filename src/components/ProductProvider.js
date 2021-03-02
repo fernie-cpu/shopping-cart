@@ -15,36 +15,42 @@ export const ProductProvider = (props) => {
       img: everythingIsFine,
       text: 'Everything Is Fine',
       price: 19.99,
+      count: 1,
     },
     {
       id: '2',
       img: okay,
       text: "World's Okayest Engineer",
       price: 20.99,
+      count: 1,
     },
     {
       id: '3',
       img: fart,
       text: 'I Fart And Walk Away',
       price: 20.99,
+      count: 1,
     },
     {
       id: '4',
       img: confused,
       text: "I'm More Confused Than A Chameleon In A Bag Of Skittles",
       price: 20.99,
+      count: 1,
     },
     {
       id: '5',
       img: favorite,
       text: 'My Favorite People Leave Me Alone',
       price: 20.99,
+      count: 1,
     },
     {
       id: '6',
       img: older,
       text: "I'm Not Getting Older, I'm Becoming Classic",
       price: 20.99,
+      count: 1,
     },
   ]);
 
