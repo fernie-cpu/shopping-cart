@@ -39,8 +39,8 @@ const Header = () => {
           <Link to='/shop'>Products</Link>
         </li>
         <li>
-          <Link exact to='/contact'>
-            Contact
+          <Link exact to='/odin'>
+            TOP
           </Link>
         </li>
         <li onClick={toggleMenu}>

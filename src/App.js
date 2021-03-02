@@ -6,7 +6,7 @@ import Products from './components/Products';
 import { ProductProvider } from './components/ProductProvider';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
-import Contact from './components/Contact';
+import Odin from './components/Odin';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
               <Route exact path='/shop' component={Products} />
               <Route path='/shop/:id' component={ProductDetails} />
               <Route path='/cart' component={Cart} />
-              <Route path='/contact' component={Contact} />
+              <Route path='/odin' component={Odin} />
             </Switch>
           </section>
         </BrowserRouter>
