@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.5a110a52.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.e78a32e3.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.e78a32e3.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.b6a2e420.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.b6a2e420.js.map",
+    "static/js/2.e12d75e1.chunk.js": "/shopping-cart/static/js/2.e12d75e1.chunk.js",
+    "static/js/2.e12d75e1.chunk.js.map": "/shopping-cart/static/js/2.e12d75e1.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.5a110a52.chunk.css.map": "/shopping-cart/static/css/main.5a110a52.chunk.css.map",
+    "static/js/2.e12d75e1.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.e12d75e1.chunk.js.LICENSE.txt",
+    "static/media/confused.fb8767d5.png": "/shopping-cart/static/media/confused.fb8767d5.png",
+    "static/media/everything-is-fine.fa30629a.png": "/shopping-cart/static/media/everything-is-fine.fa30629a.png",
+    "static/media/fart-walk-away.42a0a463.png": "/shopping-cart/static/media/fart-walk-away.42a0a463.png",
+    "static/media/favorite-people.76392400.png": "/shopping-cart/static/media/favorite-people.76392400.png",
+    "static/media/not-older.6634fbe4.png": "/shopping-cart/static/media/not-older.6634fbe4.png",
+    "static/media/okayest-engineer.f11d182f.png": "/shopping-cart/static/media/okayest-engineer.f11d182f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b6a2e420.js",
+    "static/js/2.e12d75e1.chunk.js",
+    "static/css/main.5a110a52.chunk.css",
+    "static/js/main.e78a32e3.chunk.js"
+  ]
+}
