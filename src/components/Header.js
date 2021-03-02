@@ -1,9 +1,12 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
-import Menu from './img/bars-solid.svg';
-import Close from './img/times-solid.svg';
-import Cart from './img/cart.svg';
 import { ProductContext } from './ProductProvider';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faShoppingCart,
+  faTimes,
+  faBars,
+} from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -21,7 +24,7 @@ const Header = () => {
   return (
     <header>
       <div className='menu' onClick={toggleMenu}>
-        <img src={Menu} alt='' width='30' />
+        <FontAwesomeIcon icon={faBars} width='30' />
       </div>
       <div className='logo'>
         <h1>SHOP</h1>
@@ -36,17 +39,17 @@ const Header = () => {
           <Link to='/shop'>Products</Link>
         </li>
         <li>
-          <Link exact to='/'>
+          <Link exact to='/contact'>
             Contact
           </Link>
         </li>
         <li onClick={toggleMenu}>
-          <img src={Close} alt='' className='menu' width='30' />
+          <FontAwesomeIcon icon={faTimes} width='30' className='menu close' />
         </li>
       </ul>
       <div className='cart-icon'>
         <Link to='/cart'>
-          <img src={Cart} alt='' width='30' />
+          <FontAwesomeIcon icon={faShoppingCart} width='30' />
         </Link>
         <span>{cart.length}</span>
       </div>

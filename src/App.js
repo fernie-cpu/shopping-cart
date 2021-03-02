@@ -6,6 +6,7 @@ import Products from './components/Products';
 import { ProductProvider } from './components/ProductProvider';
 import ProductDetails from './components/ProductDetails';
 import Cart from './components/Cart';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route exact path='/shop' component={Products} />
               <Route path='/shop/:id' component={ProductDetails} />
               <Route path='/cart' component={Cart} />
+              <Route path='/contact' component={Contact} />
             </Switch>
           </section>
         </BrowserRouter>
