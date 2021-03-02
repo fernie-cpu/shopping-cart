@@ -21,6 +21,24 @@ const Cart = () => {
     return <h2>Cart empty</h2>;
   }
 
+  const decrement = (id) => {
+    cart.forEach((item) => {
+      if (item.id === id) {
+        item.count === 1 ? (item.count = 1) : (item.count -= 1);
+      }
+    });
+    setCart([...cart]);
+  };
+
+  const increment = (id) => {
+    cart.forEach((item) => {
+      if (item.id === id) {
+        item.count += 1;
+      }
+    });
+    setCart([...cart]);
+  };
+
   return (
     <div>
       {cart.map((product) => {
@@ -35,9 +53,15 @@ const Cart = () => {
               <p>$ {product.price}</p>
 
               <div className='amount'>
-                <button className='count'> - </button>
+                <button className='count' onClick={() => decrement(product.id)}>
+                  {' '}
+                  -{' '}
+                </button>
                 <span>{product.count}</span>
-                <button className='count'> + </button>
+                <button className='count' onClick={() => increment(product.id)}>
+                  {' '}
+                  +{' '}
+                </button>
               </div>
 
               <div className='delete'>
