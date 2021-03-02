@@ -39,6 +39,21 @@ const Cart = () => {
     setCart([...cart]);
   };
 
+  const removeItem = (id) => {
+    if (
+      window.confirm(
+        'Are you sure you wanna remove this product from the cart?'
+      )
+    ) {
+      cart.forEach((item, index) => {
+        if (item.id === id) {
+          cart.splice(index, 1);
+        }
+      });
+      setCart([...cart]);
+    }
+  };
+
   return (
     <div>
       {cart.map((product) => {
@@ -65,7 +80,12 @@ const Cart = () => {
               </div>
 
               <div className='delete'>
-                <button className='delItem'>remove from cart</button>
+                <button
+                  className='delItem'
+                  onClick={() => removeItem(product.id)}
+                >
+                  remove from cart
+                </button>
               </div>
             </div>
           </div>
