@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import React, { useState, createContext, useEffect } from 'react';
 import everythingIsFine from './img/everything-is-fine.png';
 import confused from './img/confused.png';
 import fart from './img/fart-walk-away.png';
@@ -61,6 +61,15 @@ export const ProductProvider = (props) => {
       alert('You already got that in the cart.');
     }
   };
+
+  useEffect(() => {
+    const dataCart = JSON.parse(localStorage.getItem('data-cart'));
+    if (dataCart) setCart(dataCart);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('data-cart', JSON.stringify(cart));
+  }, [cart]);
 
   const value = {
     products: [products, setProducts],
