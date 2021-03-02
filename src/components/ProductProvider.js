@@ -48,8 +48,28 @@ export const ProductProvider = (props) => {
     },
   ]);
 
+  const [cart, setCart] = useState([]);
+
+  const addCart = (id) => {
+    const check = cart.every((item) => {
+      return item.id !== id;
+    });
+    if (check) {
+      const data = products.filter((product) => product.id === id);
+      setCart([...cart, ...data]);
+    } else {
+      alert('You already got that in the cart.');
+    }
+  };
+
+  const value = {
+    products: [products, setProducts],
+    cart: [cart, setCart],
+    addCart: addCart,
+  };
+
   return (
-    <ProductContext.Provider value={[products, setProducts]}>
+    <ProductContext.Provider value={value}>
       {props.children}
     </ProductContext.Provider>
   );

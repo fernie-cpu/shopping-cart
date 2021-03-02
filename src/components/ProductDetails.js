@@ -1,10 +1,13 @@
 import React, { useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { ProductContext } from './ProductProvider';
+import { Link } from 'react-router-dom';
 
 const ProductDetails = () => {
   const { id } = useParams();
-  const [products, setProducts] = useContext(ProductContext);
+  const value = useContext(ProductContext);
+  const [products] = value.products;
+  const addCart = value.addCart;
 
   const details = products.filter((product, index) => product.id === id);
   console.log(details);
@@ -20,8 +23,14 @@ const ProductDetails = () => {
             ></div>
             <div className='box-details'>
               <h2>T-SHIRT {product.text}</h2>
-              <h3>${product.price}</h3>
-              <button className='cart'>ADD TO CART</button>
+              <p>$ {product.price}</p>
+              <Link
+                to='/cart'
+                className='cart'
+                onClick={() => addCart(product.id)}
+              >
+                add to cart
+              </Link>
             </div>
           </div>
         );
