@@ -25,6 +25,15 @@ const Cart = () => {
                 <span>{product.count}</span>
                 <button> + </button>
               </div>
+
+              <div className='delete'>
+                <button>remove from cart</button>
+              </div>
+            </div>
+
+            <div className='total'>
+              <Link to='/checkout'>Checkout</Link>
+              <h3>Total: $ {total}</h3>
             </div>
           </div>
         );
