@@ -200,6 +200,56 @@ ul li {
   text-transform: uppercase;
 }
 
+.cart-item {
+  border: 1px solid #333;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.cart-item .img-container {
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0.9rem;
+  max-width: 300px;
+}
+
+.box-details .amount span {
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+.amount .count {
+  width: 40px;
+  font-size: 1.2rem;
+  height: 30px;
+}
+
+.delete {
+  margin-top: 1rem;
+}
+
+.delItem {
+  padding: 0.6rem 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
 @media (max-width: 700px) {
   header {
     justify-content: space-between;

@@ -58,7 +58,7 @@ const Cart = () => {
     <div>
       {cart.map((product) => {
         return (
-          <div className='details' key={product.id}>
+          <div className='details cart-item' key={product.id}>
             <div
               className='img-container'
               style={{ backgroundImage: `url(${product.img})` }}
@@ -69,13 +69,11 @@ const Cart = () => {
 
               <div className='amount'>
                 <button className='count' onClick={() => decrement(product.id)}>
-                  {' '}
-                  -{' '}
+                  -
                 </button>
                 <span>{product.count}</span>
                 <button className='count' onClick={() => increment(product.id)}>
-                  {' '}
-                  +{' '}
+                  +
                 </button>
               </div>
 
