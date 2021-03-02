@@ -17,11 +17,14 @@ function App() {
 
           <section>
             <Switch>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/shop' component={Products} />
-              <Route path='/shop/:id' component={ProductDetails} />
-              <Route path='/cart' component={Cart} />
-              <Route path='/odin' component={Odin} />
+              <Route exact path='/shopping-cart' component={Home} />
+              <Route exact path='/shopping-cart/shop' component={Products} />
+              <Route
+                path='/shopping-cart/shop/:id'
+                component={ProductDetails}
+              />
+              <Route path='/shopping-cart/cart' component={Cart} />
+              <Route path='/shopping-cart/odin' component={Odin} />
             </Switch>
           </section>
         </BrowserRouter>

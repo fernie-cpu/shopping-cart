@@ -36,10 +36,10 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to='/shop'>Products</Link>
+          <Link to='/shopping-cart/shop'>Products</Link>
         </li>
         <li>
-          <Link exact to='/odin'>
+          <Link exact to='/shopping-cart/odin'>
             TOP
           </Link>
         </li>
@@ -48,7 +48,7 @@ const Header = () => {
         </li>
       </ul>
       <div className='cart-icon'>
-        <Link to='/cart'>
+        <Link to='/shopping-cart/cart'>
           <FontAwesomeIcon icon={faShoppingCart} width='30' />
         </Link>
         <span>{cart.length}</span>
