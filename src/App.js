@@ -23,7 +23,7 @@ function App() {
                 path='/shopping-cart/shop/:id'
                 component={ProductDetails}
               />
-              <Route path='/shopping-cart/cart' component={Cart} />
+              <Route path='/shopping-cart/cart' component={Cart}></Route>
               <Route path='/shopping-cart/odin' component={Odin} />
             </Switch>
           </section>
