@@ -31,7 +31,7 @@ const Header = () => {
       </div>
       <ul style={styleMenu}>
         <li>
-          <Link exact to='/'>
+          <Link exact to='/shopping-cart'>
             Home
           </Link>
         </li>
