@@ -36,7 +36,7 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to='/shopping-cart/shop'>ProductS</Link>
+          <Link to='/shopping-cart/shop'>Products</Link>
         </li>
         <li>
           <Link exact to='/shopping-cart/odin'>
