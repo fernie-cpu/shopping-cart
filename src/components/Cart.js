@@ -10,7 +10,7 @@ const Cart = () => {
   useEffect(() => {
     const getTotal = () => {
       const res = cart.reduce((prev, item) => {
-        return prev + item.price * item.count;
+        return prev + item.count * item.price;
       }, 0);
       setTotal(res);
     };

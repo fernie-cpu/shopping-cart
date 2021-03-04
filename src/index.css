@@ -251,7 +251,6 @@ ul li {
 
 .cart-item {
   border: 1px solid #333;
-  height: 280px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
